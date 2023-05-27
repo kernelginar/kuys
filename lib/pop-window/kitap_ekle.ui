@@ -73,9 +73,6 @@
         </property>
        </widget>
       </item>
-      <item row="1" column="0">
-       <widget class="QLineEdit" name="id_lineEdit"/>
-      </item>
       <item row="4" column="1">
        <widget class="QLineEdit" name="kitap_yazari_lineEdit"/>
       </item>
@@ -246,6 +243,9 @@
          </size>
         </property>
        </spacer>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QLineEdit" name="id_lineEdit"/>
       </item>
      </layout>
     </item>
