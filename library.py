@@ -1,4 +1,10 @@
 #!/usr/bin/env python3
+
+"""
+Yapımcı: Kernelginar <https://github.com/kernelginar>
+Lisans Türü: GPLv2
+"""
+
 import sys
 import time
 from os.path import dirname
