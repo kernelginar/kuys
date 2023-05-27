@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>732</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>700</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Kayıt Ekle</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="2" column="0">
+     <widget class="QPushButton" name="btnKayitEkle">
+      <property name="text">
+       <string>Kayıt Ekle</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="id_label">
+        <property name="text">
+         <string>ID</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="id_lineEdit"/>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="isim_soyisim_label">
+        <property name="text">
+         <string>İsim - Soyisim</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="isim_soyisim_lineEdit"/>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="sinif_label">
+        <property name="text">
+         <string>Sınıf</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="sinif_comboBox">
+        <item>
+         <property name="text">
+          <string>9/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>9/B</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>9/C</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>9/D</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>9/E</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>10/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>10/B</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>10/C</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>10/D</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>10/E</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>11/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>11/B</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>11/C</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>11/D</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>11/E</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>12/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>12/B</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>12/C</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>12/D</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>12/E</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Öğretmen</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="numara_label">
+        <property name="text">
+         <string>Numara</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="numara_lineEdit"/>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="kitap_ismi_label">
+        <property name="text">
+         <string>Kitap İsmi</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="kitap_ismi_lineEdit"/>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_5">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="kitap_yazari_label">
+        <property name="text">
+         <string>Kitap Yazarı</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="kitap_yazari_lineEdit"/>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_6">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="kitaplik_label">
+        <property name="text">
+         <string>Kitaplık</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="kitaplik_comboBox">
+        <item>
+         <property name="text">
+          <string>A1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>A2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>A3</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>A4</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>A5</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>A6</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>A7</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>A8</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>A9</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>A10</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>B1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>B2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>B3</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>B4</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>B5</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>B6</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>B7</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>B8</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>B9</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>B10</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_7">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="kitap_rafi_label">
+        <property name="text">
+         <string>Kitap Rafı</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="kitap_rafi_comboBox">
+        <item>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>3</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>4</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_8">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="kitap_son_teslim_tarihi_label">
+        <property name="text">
+         <string>Kitap Son Teslim Tarihi (Gün/Ay/Yıl [28/05/2023] gibi)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="kitap_son_teslim_tarihi_lineEdit"/>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <spacer name="horizontalSpacer_9">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
