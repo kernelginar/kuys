@@ -82,21 +82,9 @@ class Window(QMainWindow):
                 kayit_listesi.clear()
                 kayit_listesi.setHorizontalHeaderLabels(("ID", "İsim - Soyisim", "Sınıf", "Numara", "Kitap İsmi", "Kitap Yazarı", "Kitaplık", "Kitap Rafı", "Kitap Alınma Tarihi", "Kitap Son Teslim Tarihi", "Teslim Durumu"))
 
-                count = 0
-                for satir in db_cursor:
-                    kayit_listesi.setItem(count, 0, QTableWidgetItem(satir[0]))
-                    kayit_listesi.setItem(count, 1, QTableWidgetItem(satir[1]))
-                    kayit_listesi.setItem(count, 2, QTableWidgetItem(satir[2]))
-                    kayit_listesi.setItem(count, 3, QTableWidgetItem(satir[3]))
-                    kayit_listesi.setItem(count, 4, QTableWidgetItem(satir[4]))
-                    kayit_listesi.setItem(count, 5, QTableWidgetItem(satir[5]))
-                    kayit_listesi.setItem(count, 6, QTableWidgetItem(satir[6]))
-                    kayit_listesi.setItem(count, 7, QTableWidgetItem(satir[7]))
-                    kayit_listesi.setItem(count, 8, QTableWidgetItem(satir[8]))
-                    kayit_listesi.setItem(count, 9, QTableWidgetItem(satir[9]))
-                    kayit_listesi.setItem(count, 10, QTableWidgetItem(satir[10]))
-
-                    count += 1
+                for indexSatir, kayitNumarasi in enumerate(db_cursor):
+                    for indexSutun, kayitSutun in enumerate(kayitNumarasi):
+                        kayit_listesi.setItem(indexSatir, indexSutun, QTableWidgetItem(str(kayitSutun)))
 
             def isim_ara():
                 aranacak_isim = str(ui_kayit_ara.sorgu_lineEdit.text())
@@ -114,21 +102,10 @@ class Window(QMainWindow):
                 kayit_listesi.clear()
                 kayit_listesi.setHorizontalHeaderLabels(("ID", "İsim - Soyisim", "Sınıf", "Numara", "Kitap İsmi", "Kitap Yazarı", "Kitaplık", "Kitap Rafı", "Kitap Alınma Tarihi", "Kitap Son Teslim Tarihi", "Teslim Durumu"))
 
-                count = 0
-                for satir in db_cursor:
-                    kayit_listesi.setItem(count, 0, QTableWidgetItem(satir[0]))
-                    kayit_listesi.setItem(count, 1, QTableWidgetItem(satir[1]))
-                    kayit_listesi.setItem(count, 2, QTableWidgetItem(satir[2]))
-                    kayit_listesi.setItem(count, 3, QTableWidgetItem(satir[3]))
-                    kayit_listesi.setItem(count, 4, QTableWidgetItem(satir[4]))
-                    kayit_listesi.setItem(count, 5, QTableWidgetItem(satir[5]))
-                    kayit_listesi.setItem(count, 6, QTableWidgetItem(satir[6]))
-                    kayit_listesi.setItem(count, 7, QTableWidgetItem(satir[7]))
-                    kayit_listesi.setItem(count, 8, QTableWidgetItem(satir[8]))
-                    kayit_listesi.setItem(count, 9, QTableWidgetItem(satir[9]))
-                    kayit_listesi.setItem(count, 10, QTableWidgetItem(satir[10]))
 
-                    count += 1
+                for indexSatir, kayitNumarasi in enumerate(db_cursor):
+                    for indexSutun, kayitSutun in enumerate(kayitNumarasi):
+                        kayit_listesi.setItem(indexSatir, indexSutun, QTableWidgetItem(str(kayitSutun)))
 
             def sinif_ara():
                 aranacak_sinif = str(ui_kayit_ara.sorgu_lineEdit.text())
@@ -146,21 +123,9 @@ class Window(QMainWindow):
                 kayit_listesi.clear()
                 kayit_listesi.setHorizontalHeaderLabels(("ID", "İsim - Soyisim", "Sınıf", "Numara", "Kitap İsmi", "Kitap Yazarı", "Kitaplık", "Kitap Rafı", "Kitap Alınma Tarihi", "Kitap Son Teslim Tarihi", "Teslim Durumu"))
 
-                count = 0
-                for satir in db_cursor:
-                    kayit_listesi.setItem(count, 0, QTableWidgetItem(satir[0]))
-                    kayit_listesi.setItem(count, 1, QTableWidgetItem(satir[1]))
-                    kayit_listesi.setItem(count, 2, QTableWidgetItem(satir[2]))
-                    kayit_listesi.setItem(count, 3, QTableWidgetItem(satir[3]))
-                    kayit_listesi.setItem(count, 4, QTableWidgetItem(satir[4]))
-                    kayit_listesi.setItem(count, 5, QTableWidgetItem(satir[5]))
-                    kayit_listesi.setItem(count, 6, QTableWidgetItem(satir[6]))
-                    kayit_listesi.setItem(count, 7, QTableWidgetItem(satir[7]))
-                    kayit_listesi.setItem(count, 8, QTableWidgetItem(satir[8]))
-                    kayit_listesi.setItem(count, 9, QTableWidgetItem(satir[9]))
-                    kayit_listesi.setItem(count, 10, QTableWidgetItem(satir[10]))
-
-                    count += 1
+                for indexSatir, kayitNumarasi in enumerate(db_cursor):
+                    for indexSutun, kayitSutun in enumerate(kayitNumarasi):
+                        kayit_listesi.setItem(indexSatir, indexSutun, QTableWidgetItem(str(kayitSutun)))
 
             def numara_ara():
                 aranacak_numara = str(ui_kayit_ara.sorgu_lineEdit.text())
@@ -178,21 +143,9 @@ class Window(QMainWindow):
                 kayit_listesi.clear()
                 kayit_listesi.setHorizontalHeaderLabels(("ID", "İsim - Soyisim", "Sınıf", "Numara", "Kitap İsmi", "Kitap Yazarı", "Kitaplık", "Kitap Rafı", "Kitap Alınma Tarihi", "Kitap Son Teslim Tarihi", "Teslim Durumu"))
 
-                count = 0
-                for satir in db_cursor:
-                    kayit_listesi.setItem(count, 0, QTableWidgetItem(satir[0]))
-                    kayit_listesi.setItem(count, 1, QTableWidgetItem(satir[1]))
-                    kayit_listesi.setItem(count, 2, QTableWidgetItem(satir[2]))
-                    kayit_listesi.setItem(count, 3, QTableWidgetItem(satir[3]))
-                    kayit_listesi.setItem(count, 4, QTableWidgetItem(satir[4]))
-                    kayit_listesi.setItem(count, 5, QTableWidgetItem(satir[5]))
-                    kayit_listesi.setItem(count, 6, QTableWidgetItem(satir[6]))
-                    kayit_listesi.setItem(count, 7, QTableWidgetItem(satir[7]))
-                    kayit_listesi.setItem(count, 8, QTableWidgetItem(satir[8]))
-                    kayit_listesi.setItem(count, 9, QTableWidgetItem(satir[9]))
-                    kayit_listesi.setItem(count, 10, QTableWidgetItem(satir[10]))
-                    
-                    count += 1
+                for indexSatir, kayitNumarasi in enumerate(db_cursor):
+                    for indexSutun, kayitSutun in enumerate(kayitNumarasi):
+                        kayit_listesi.setItem(indexSatir, indexSutun, QTableWidgetItem(str(kayitSutun)))
 
             def kitap_ismi_ara():
                 aranacak_kitap_ismi = str(ui_kayit_ara.sorgu_lineEdit.text())
@@ -210,21 +163,9 @@ class Window(QMainWindow):
                 kayit_listesi.clear()
                 kayit_listesi.setHorizontalHeaderLabels(("ID", "İsim - Soyisim", "Sınıf", "Numara", "Kitap İsmi", "Kitap Yazarı", "Kitaplık", "Kitap Rafı", "Kitap Alınma Tarihi", "Kitap Son Teslim Tarihi", "Teslim Durumu"))
 
-                count = 0
-                for satir in db_cursor:
-                    kayit_listesi.setItem(count, 0, QTableWidgetItem(satir[0]))
-                    kayit_listesi.setItem(count, 1, QTableWidgetItem(satir[1]))
-                    kayit_listesi.setItem(count, 2, QTableWidgetItem(satir[2]))
-                    kayit_listesi.setItem(count, 3, QTableWidgetItem(satir[3]))
-                    kayit_listesi.setItem(count, 4, QTableWidgetItem(satir[4]))
-                    kayit_listesi.setItem(count, 5, QTableWidgetItem(satir[5]))
-                    kayit_listesi.setItem(count, 6, QTableWidgetItem(satir[6]))
-                    kayit_listesi.setItem(count, 7, QTableWidgetItem(satir[7]))
-                    kayit_listesi.setItem(count, 8, QTableWidgetItem(satir[8]))
-                    kayit_listesi.setItem(count, 9, QTableWidgetItem(satir[9]))
-                    kayit_listesi.setItem(count, 10, QTableWidgetItem(satir[10]))
-
-                    count += 1
+                for indexSatir, kayitNumarasi in enumerate(db_cursor):
+                    for indexSutun, kayitSutun in enumerate(kayitNumarasi):
+                        kayit_listesi.setItem(indexSatir, indexSutun, QTableWidgetItem(str(kayitSutun)))
 
             def kitap_yazari_ara():
                 aranacak_kitap_yazari = str(ui_kayit_ara.sorgu_lineEdit.text())
@@ -242,21 +183,9 @@ class Window(QMainWindow):
                 kayit_listesi.clear()
                 kayit_listesi.setHorizontalHeaderLabels(("ID", "İsim - Soyisim", "Sınıf", "Numara", "Kitap İsmi", "Kitap Yazarı", "Kitaplık", "Kitap Rafı", "Kitap Alınma Tarihi", "Kitap Son Teslim Tarihi", "Teslim Durumu"))
 
-                count = 0
-                for satir in db_cursor:
-                    kayit_listesi.setItem(count, 0, QTableWidgetItem(satir[0]))
-                    kayit_listesi.setItem(count, 1, QTableWidgetItem(satir[1]))
-                    kayit_listesi.setItem(count, 2, QTableWidgetItem(satir[2]))
-                    kayit_listesi.setItem(count, 3, QTableWidgetItem(satir[3]))
-                    kayit_listesi.setItem(count, 4, QTableWidgetItem(satir[4]))
-                    kayit_listesi.setItem(count, 5, QTableWidgetItem(satir[5]))
-                    kayit_listesi.setItem(count, 6, QTableWidgetItem(satir[6]))
-                    kayit_listesi.setItem(count, 7, QTableWidgetItem(satir[7]))
-                    kayit_listesi.setItem(count, 8, QTableWidgetItem(satir[8]))
-                    kayit_listesi.setItem(count, 9, QTableWidgetItem(satir[9]))
-                    kayit_listesi.setItem(count, 10, QTableWidgetItem(satir[10]))
-
-                    count += 1
+                for indexSatir, kayitNumarasi in enumerate(db_cursor):
+                    for indexSutun, kayitSutun in enumerate(kayitNumarasi):
+                        kayit_listesi.setItem(indexSatir, indexSutun, QTableWidgetItem(str(kayitSutun)))
 
             def kitaplik_ara():
                 aranacak_kitaplik = str(ui_kayit_ara.sorgu_lineEdit.text())
@@ -478,15 +407,9 @@ class Window(QMainWindow):
                 kitap_listesi.clear()
                 kitap_listesi.setHorizontalHeaderLabels(("ID", "Kitap İsmi", "Kitap Yazarı", "Kitaplık", "Kitap Rafı"))
  
-                count = 0
-                for satir in db_cursor:
-                    kitap_listesi.setItem(count, 0, QTableWidgetItem(satir[0]))
-                    kitap_listesi.setItem(count, 1, QTableWidgetItem(satir[1]))
-                    kitap_listesi.setItem(count, 2, QTableWidgetItem(satir[2]))
-                    kitap_listesi.setItem(count, 3, QTableWidgetItem(satir[3]))
-                    kitap_listesi.setItem(count, 4, QTableWidgetItem(satir[4]))
-
-                    count += 1
+                for indexSatir, kayitNumarasi in enumerate(db_cursor):
+                    for indexSutun, kayitSutun in enumerate(kayitNumarasi):
+                        kitap_listesi.setItem(indexSatir, indexSutun, QTableWidgetItem(str(kayitSutun)))
 
             def kitap_ara():
                 aranacak_kitap = str(ui_kitap_ara.sorgu_lineEdit.text())
@@ -504,15 +427,9 @@ class Window(QMainWindow):
                 kitap_listesi.clear()
                 kitap_listesi.setHorizontalHeaderLabels(("ID", "Kitap İsmi", "Kitap Yazarı", "Kitaplık", "Kitap Rafı"))
 
-                count = 0
-                for satir in db_cursor:
-                    kitap_listesi.setItem(count, 0, QTableWidgetItem(satir[0]))
-                    kitap_listesi.setItem(count, 1, QTableWidgetItem(satir[1]))
-                    kitap_listesi.setItem(count, 2, QTableWidgetItem(satir[2]))
-                    kitap_listesi.setItem(count, 3, QTableWidgetItem(satir[3]))
-                    kitap_listesi.setItem(count, 4, QTableWidgetItem(satir[4]))
-
-                    count += 1
+                for indexSatir, kayitNumarasi in enumerate(db_cursor):
+                    for indexSutun, kayitSutun in enumerate(kayitNumarasi):
+                        kitap_listesi.setItem(indexSatir, indexSutun, QTableWidgetItem(str(kayitSutun)))
 
             def yazar_ara():
                 aranacak_yazar = str(ui_kitap_ara.sorgu_lineEdit.text())
@@ -530,15 +447,9 @@ class Window(QMainWindow):
                 kitap_listesi.clear()
                 kitap_listesi.setHorizontalHeaderLabels(("ID", "Kitap İsmi", "Kitap Yazarı", "Kitaplık", "Kitap Rafı"))
 
-                count = 0
-                for satir in db_cursor:
-                    kitap_listesi.setItem(count, 0, QTableWidgetItem(satir[0]))
-                    kitap_listesi.setItem(count, 1, QTableWidgetItem(satir[1]))
-                    kitap_listesi.setItem(count, 2, QTableWidgetItem(satir[2]))
-                    kitap_listesi.setItem(count, 3, QTableWidgetItem(satir[3]))
-                    kitap_listesi.setItem(count, 4, QTableWidgetItem(satir[4]))
-
-                    count += 1
+                for indexSatir, kayitNumarasi in enumerate(db_cursor):
+                    for indexSutun, kayitSutun in enumerate(kayitNumarasi):
+                        kitap_listesi.setItem(indexSatir, indexSutun, QTableWidgetItem(str(kayitSutun)))
 
             def kitaplik_ara():
                 aranacak_kitaplik = str(ui_kitap_ara.sorgu_lineEdit.text())
