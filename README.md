@@ -1,4 +1,4 @@
-# Kütüphane Kayıt Sistemi
+# Kütüphane Yönetim Sistemi
 Bu program, Python, SQLite3 ve PyQt5 kullanılarak yazıldı. <br />
 Temel bütün işlevler programda yer alıyor. Mesela:
 
