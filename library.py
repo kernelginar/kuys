@@ -6,7 +6,6 @@ Lisans Türü: GPLv2
 """
 
 import sys
-import time
 from os.path import dirname
 from os import chdir
 chdir(dirname(__file__))
