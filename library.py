@@ -14,7 +14,7 @@ from utils import kutuphane, kitap, zaman
 
 from PyQt5 import QtGui
 from PyQt5.uic import loadUi
-from PyQt5.QtWidgets import QMainWindow, QApplication, QTableWidgetItem, QHeaderView, QMessageBox
+from PyQt5.QtWidgets import QMainWindow, QApplication, QTableWidgetItem, QHeaderView
 
 import sqlite3 as sql
 database = sql.connect("./database/kutuphane.db")
@@ -71,6 +71,26 @@ class Window(QMainWindow):
             kayit_listesi.clear()
             kayit_listesi.setHorizontalHeaderLabels(("ID", "İsim - Soyisim", "Sınıf", "Numara", "Kitap İsmi", "Kitap Yazarı", "Kitaplık", "Kitap Rafı", "Kitap Alınma Tarihi", "Kitap Son Teslim Tarihi", "Teslim Durumu"))
             kayit_listesi.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
+
+            #------------------------------------------->
+
+            def id_ara_backend(aranacak_id: str):
+                sorgu = f'''SELECT * FROM kutuphane WHERE id LIKE "{aranacak_id}"'''
+                db_cursor.execute(sorgu)
+
+                kayit_listesi.clear()
+                kayit_listesi.setHorizontalHeaderLabels(("ID", "İsim - Soyisim", "Sınıf", "Numara", "Kitap İsmi", "Kitap Yazarı", "Kitaplık", "Kitap Rafı", "Kitap Alınma Tarihi", "Kitap Son Teslim Tarihi", "Teslim Durumu"))
+
+                for indexSatir, kayitNumarasi in enumerate(db_cursor):
+                    for indexSutun, kayitSutun in enumerate(kayitNumarasi):
+                        kayit_listesi.setItem(indexSatir, indexSutun, QTableWidgetItem(str(kayitSutun)))
+
+            def id_ara():
+                aranacak_id = str(ui_kayit_ara.sorgu_lineEdit.text())
+                id_ara_backend(aranacak_id=aranacak_id)
+
+            KayitIDAraButonu = ui_kayit_ara.btnIDAra
+            KayitIDAraButonu.clicked.connect(id_ara)
 
             #------------------------------------------->
 
@@ -192,6 +212,26 @@ class Window(QMainWindow):
 
             KayitKitaplikAraButonu = ui_kayit_ara.btnKitaplikAra
             KayitKitaplikAraButonu.clicked.connect(kitaplik_ara)
+
+            #------------------------------------------->
+
+            def teslim_durumu_ara_backend(aranacak_durum: str):
+                sorgu = f'''SELECT * FROM kutuphane WHERE teslim_durumu LIKE "{aranacak_durum}%" ORDER BY kitap_son_teslim_tarihi ASC'''
+                db_cursor.execute(sorgu)
+
+                kayit_listesi.clear()
+                kayit_listesi.setHorizontalHeaderLabels(("ID", "İsim - Soyisim", "Sınıf", "Numara", "Kitap İsmi", "Kitap Yazarı", "Kitaplık", "Kitap Rafı", "Kitap Alınma Tarihi", "Kitap Son Teslim Tarihi", "Teslim Durumu"))
+
+                for indexSatir, kayitNumarasi in enumerate(db_cursor):
+                    for indexSutun, kayitSutun in enumerate(kayitNumarasi):
+                        kayit_listesi.setItem(indexSatir, indexSutun, QTableWidgetItem(str(kayitSutun)))
+
+            def teslim_durumu_ara():
+                aranacak_durum = str(ui_kayit_ara.sorgu_lineEdit.text())
+                teslim_durumu_ara_backend(aranacak_durum=aranacak_durum)
+
+            KayitTeslimDurumuAraButonu = ui_kayit_ara.btnTeslimDurumuAra
+            KayitTeslimDurumuAraButonu.clicked.connect(teslim_durumu_ara)
 
             #------------------------------------------->
 
@@ -396,6 +436,26 @@ class Window(QMainWindow):
             kitap_listesi.clear()
             kitap_listesi.setHorizontalHeaderLabels(("ID", "Kitap İsmi", "Kitap Yazarı", "Kitaplık", "Kitap Rafı"))
             kitap_listesi.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
+
+            #------------------------------------------->
+
+            def kitap_id_ara_backend(aranacak_id: str):
+                sorgu = f'''SELECT * FROM kitaplar WHERE id LIKE "{aranacak_id}"'''
+                db_cursor.execute(sorgu)
+
+                kitap_listesi.clear()
+                kitap_listesi.setHorizontalHeaderLabels(("ID", "Kitap İsmi", "Kitap Yazarı", "Kitaplık", "Kitap Rafı"))
+
+                for indexSatir, kayitNumarasi in enumerate(db_cursor):
+                    for indexSutun, kayitSutun in enumerate(kayitNumarasi):
+                        kitap_listesi.setItem(indexSatir, indexSutun, QTableWidgetItem(str(kayitSutun)))
+
+            def kitap_id_ara():
+                aranacak_id = str(ui_kitap_ara.sorgu_lineEdit.text())
+                kitap_id_ara_backend(aranacak_id=aranacak_id)
+
+            KitapIDAraButonu = ui_kitap_ara.btnKitapIDAra
+            KitapIDAraButonu.clicked.connect(kitap_id_ara)
 
             #------------------------------------------->
 
