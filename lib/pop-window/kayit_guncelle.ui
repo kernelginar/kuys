@@ -78,7 +78,7 @@
         <item row="17" column="0">
          <widget class="QLabel" name="yeni_kitap_son_teslim_tarihi_label">
           <property name="text">
-           <string>Yeni Kitap Son Teslim Tarihi (Gün/Ay/Yıl [28/05/2023] gibi)</string>
+           <string>Yeni Kitap Son Teslim Tarihi (Yıl/Ay/Gün şeklinde (2023/05/28 gibi))</string>
           </property>
          </widget>
         </item>

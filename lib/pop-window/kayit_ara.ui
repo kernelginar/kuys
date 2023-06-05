@@ -15,59 +15,73 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="1" column="0" colspan="6">
-     <widget class="QLineEdit" name="sorgu_lineEdit"/>
-    </item>
-    <item row="2" column="4">
-     <widget class="QPushButton" name="btnKitapYazariAra">
-      <property name="text">
-       <string>Kitap Yazarı Ara</string>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="0">
+    <item row="2" column="1">
      <widget class="QPushButton" name="btnIsimAra">
       <property name="text">
        <string>İsim Ara</string>
       </property>
      </widget>
     </item>
-    <item row="0" column="0" colspan="2">
-     <widget class="QLabel" name="sorgu_label">
-      <property name="text">
-       <string>Aranacak Sorgu</string>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="1">
-     <widget class="QPushButton" name="btnSinifAra">
-      <property name="text">
-       <string>Sınıf Ara</string>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="5">
+    <item row="2" column="6">
      <widget class="QPushButton" name="btnKitaplikAra">
       <property name="text">
        <string>Kitaplık Ara</string>
       </property>
      </widget>
     </item>
-    <item row="2" column="2">
+    <item row="2" column="5">
+     <widget class="QPushButton" name="btnKitapYazariAra">
+      <property name="text">
+       <string>Kitap Yazarı Ara</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
      <widget class="QPushButton" name="btnNumaraAra">
       <property name="text">
        <string>Numara Ara</string>
       </property>
      </widget>
     </item>
-    <item row="2" column="3">
+    <item row="2" column="4">
      <widget class="QPushButton" name="btnKitapIsmiAra">
       <property name="text">
        <string>Kitap İsmi Ara</string>
       </property>
      </widget>
     </item>
-    <item row="3" column="0" colspan="6">
+    <item row="2" column="0">
+     <widget class="QPushButton" name="btnIDAra">
+      <property name="text">
+       <string>ID Ara</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QPushButton" name="btnSinifAra">
+      <property name="text">
+       <string>Sınıf Ara</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="7">
+     <widget class="QPushButton" name="btnTeslimDurumuAra">
+      <property name="text">
+       <string>Teslim Durumu Ara</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="8">
+     <widget class="QLineEdit" name="sorgu_lineEdit"/>
+    </item>
+    <item row="0" column="0" colspan="8">
+     <widget class="QLabel" name="sorgu_label">
+      <property name="text">
+       <string>Aranacak Sorgu</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0" colspan="8">
      <widget class="QTableWidget" name="kayit_listesi">
       <property name="alternatingRowColors">
        <bool>true</bool>
@@ -1106,12 +1120,14 @@
  </widget>
  <tabstops>
   <tabstop>sorgu_lineEdit</tabstop>
+  <tabstop>btnIDAra</tabstop>
   <tabstop>btnIsimAra</tabstop>
   <tabstop>btnSinifAra</tabstop>
   <tabstop>btnNumaraAra</tabstop>
   <tabstop>btnKitapIsmiAra</tabstop>
   <tabstop>btnKitapYazariAra</tabstop>
   <tabstop>btnKitaplikAra</tabstop>
+  <tabstop>btnTeslimDurumuAra</tabstop>
   <tabstop>kayit_listesi</tabstop>
  </tabstops>
  <resources/>

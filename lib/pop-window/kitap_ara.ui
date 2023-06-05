@@ -23,21 +23,14 @@
    <layout class="QGridLayout" name="gridLayout_2">
     <item row="0" column="0">
      <layout class="QGridLayout" name="gridLayout">
+      <item row="2" column="3">
+       <widget class="QPushButton" name="btnKitaplikAra">
+        <property name="text">
+         <string>Kitaplıklarda Ara</string>
+        </property>
+       </widget>
+      </item>
       <item row="2" column="1">
-       <widget class="QPushButton" name="btnYazarAra">
-        <property name="text">
-         <string>Kitap Yazarına Göre Ara</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="0">
-       <widget class="QLabel" name="sorgu_label">
-        <property name="text">
-         <string>Aranacak Sorgu</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="0">
        <widget class="QPushButton" name="btnKitapAra">
         <property name="text">
          <string>Kitap Adına Göre Ara</string>
@@ -45,16 +38,23 @@
        </widget>
       </item>
       <item row="2" column="2">
-       <widget class="QPushButton" name="btnKitaplikAra">
+       <widget class="QPushButton" name="btnYazarAra">
         <property name="text">
-         <string>Kitaplıklarda Ara</string>
+         <string>Kitap Yazarına Göre Ara</string>
         </property>
        </widget>
       </item>
-      <item row="1" column="0" colspan="3">
+      <item row="2" column="0">
+       <widget class="QPushButton" name="btnKitapIDAra">
+        <property name="text">
+         <string>Kitap ID'si Ara</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="4">
        <widget class="QLineEdit" name="sorgu_lineEdit"/>
       </item>
-      <item row="3" column="0" colspan="3">
+      <item row="3" column="0" colspan="4">
        <widget class="QTableWidget" name="kitap_listesi">
         <property name="alternatingRowColors">
          <bool>true</bool>
@@ -1081,6 +1081,13 @@
         <column/>
        </widget>
       </item>
+      <item row="0" column="0" colspan="4">
+       <widget class="QLabel" name="sorgu_label">
+        <property name="text">
+         <string>Aranacak Sorgu</string>
+        </property>
+       </widget>
+      </item>
      </layout>
     </item>
    </layout>
@@ -1089,6 +1096,7 @@
  </widget>
  <tabstops>
   <tabstop>sorgu_lineEdit</tabstop>
+  <tabstop>btnKitapIDAra</tabstop>
   <tabstop>btnKitapAra</tabstop>
   <tabstop>btnYazarAra</tabstop>
   <tabstop>btnKitaplikAra</tabstop>
