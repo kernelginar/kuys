@@ -7,7 +7,7 @@ Lisans Türü: GPLv2
 
 import sys
 from os.path import dirname
-from os import chdir
+from os import chdir, name
 chdir(dirname(__file__))
 
 from utils import kutuphane, kitap, zaman
@@ -16,6 +16,7 @@ from PyQt5 import QtGui
 from PyQt5.uic import loadUi
 from PyQt5.QtWidgets import QMainWindow, QApplication, QTableWidgetItem, QHeaderView
 
+import ctypes
 import sqlite3 as sql
 database = sql.connect("./database/kutuphane.db")
 db_cursor = database.cursor()
@@ -23,6 +24,9 @@ db_cursor = database.cursor()
 class Window(QMainWindow):
     def __init__(self):
         super(Window, self).__init__()
+
+        if name == "nt":
+            ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID("kuys")
 
         self.setWindowIcon(QtGui.QIcon("./lib/icons/book.ico"))
         ui_window = loadUi("./lib/window/window.ui", self)
