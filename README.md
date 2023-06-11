@@ -39,7 +39,7 @@ sudo apt install python3-pyqt5
 
 ###### Diğer Linux dağıtımları
 ```bash
-python3 -m pip install pyqt5
+python3 -m pip install -r requirements.txt
 ```
 
 ---
