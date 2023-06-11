@@ -3,4 +3,4 @@ from datetime import datetime
 
 def simdiki_zaman():
     x = datetime.now()
-    return datetime.strftime(x, "%d/%m/%Y-%H:%M:%S")
+    return datetime.strftime(x, "%Y/%m/%d - %H:%M")
