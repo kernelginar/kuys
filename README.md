@@ -24,7 +24,7 @@ Python yükledikten sonra `PyQt5` bağımlılığını şu şekilde yükleyebili
 
 ###### Windows
 ```bash
-python -m pip install pyqt5
+python -m pip install -r requirements.txt
 ```
 
 ###### Arch Linux tabanlı dağıtımlar
