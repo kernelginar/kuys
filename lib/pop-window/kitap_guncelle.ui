@@ -6,14 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>700</width>
+    <height>400</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>800</width>
-    <height>600</height>
+    <width>700</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>700</width>
+    <height>400</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -21,39 +27,29 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout_3">
-    <item row="0" column="0">
-     <layout class="QGridLayout" name="gridLayout">
-      <item row="0" column="0">
-       <widget class="QLabel" name="degistirilecek_id_label">
+    <item row="1" column="0">
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="11" column="1">
+       <widget class="QPushButton" name="btnKitapRafiGuncelle">
         <property name="text">
-         <string>Değiştirilecek kitap kaydının ID bilgisi</string>
+         <string>Kitap Rafını Güncelle</string>
         </property>
        </widget>
       </item>
-      <item row="1" column="0">
-       <widget class="QLineEdit" name="degistirilecek_id_lineEdit"/>
+      <item row="1" column="0" colspan="2">
+       <widget class="QLineEdit" name="yeni_id_lineEdit"/>
       </item>
-      <item row="2" column="0">
-       <spacer name="verticalSpacer">
-        <property name="orientation">
-         <enum>Qt::Vertical</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>20</width>
-          <height>40</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-     </layout>
-    </item>
-    <item row="1" column="0">
-     <layout class="QGridLayout" name="gridLayout_2">
-      <item row="0" column="0">
-       <widget class="QLabel" name="yeni_id_label">
+      <item row="2" column="0" colspan="2">
+       <widget class="QPushButton" name="btnIdGuncelle">
         <property name="text">
-         <string>Yeni ID</string>
+         <string>ID Güncelle</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1">
+       <widget class="QLabel" name="yeni_kitap_rafi_label">
+        <property name="text">
+         <string>Yeni Kitap Rafı</string>
         </property>
        </widget>
       </item>
@@ -64,13 +60,6 @@
        <widget class="QLabel" name="yeni_kitap_ismi_label">
         <property name="text">
          <string>Yeni Kitap İsmi</string>
-        </property>
-       </widget>
-      </item>
-      <item row="6" column="0">
-       <widget class="QPushButton" name="btnKitapIsmiGuncelle">
-        <property name="text">
-         <string>Kitap İsmini Güncelle</string>
         </property>
        </widget>
       </item>
@@ -86,6 +75,27 @@
          </size>
         </property>
        </spacer>
+      </item>
+      <item row="6" column="0">
+       <widget class="QPushButton" name="btnKitapIsmiGuncelle">
+        <property name="text">
+         <string>Kitap İsmini Güncelle</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="yeni_id_label">
+        <property name="text">
+         <string>Yeni ID</string>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="0">
+       <widget class="QPushButton" name="btnKitaplikGuncelle">
+        <property name="text">
+         <string>Kitaplığı Güncelle</string>
+        </property>
+       </widget>
       </item>
       <item row="10" column="1">
        <widget class="QComboBox" name="yeni_kitap_rafi_comboBox">
@@ -111,13 +121,6 @@
         </item>
        </widget>
       </item>
-      <item row="11" column="0">
-       <widget class="QPushButton" name="btnKitaplikGuncelle">
-        <property name="text">
-         <string>Kitaplığı Güncelle</string>
-        </property>
-       </widget>
-      </item>
       <item row="5" column="1">
        <widget class="QLineEdit" name="yeni_kitap_yazari_lineEdit"/>
       </item>
@@ -133,6 +136,13 @@
          </size>
         </property>
        </spacer>
+      </item>
+      <item row="9" column="0">
+       <widget class="QLabel" name="yeni_kitaplik_label">
+        <property name="text">
+         <string>Yeni Kitaplık</string>
+        </property>
+       </widget>
       </item>
       <item row="10" column="0">
        <widget class="QComboBox" name="yeni_kitaplik_comboBox">
@@ -252,38 +262,47 @@
         </property>
        </widget>
       </item>
-      <item row="9" column="0">
-       <widget class="QLabel" name="yeni_kitaplik_label">
+     </layout>
+    </item>
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="degistirilecek_id_label">
         <property name="text">
-         <string>Yeni Kitaplık</string>
+         <string>Değiştirilecek kitap kaydının ID bilgisi</string>
         </property>
        </widget>
       </item>
-      <item row="9" column="1">
-       <widget class="QLabel" name="yeni_kitap_rafi_label">
-        <property name="text">
-         <string>Yeni Kitap Rafı</string>
-        </property>
-       </widget>
+      <item row="1" column="0">
+       <widget class="QLineEdit" name="degistirilecek_id_lineEdit"/>
       </item>
-      <item row="11" column="1">
-       <widget class="QPushButton" name="btnKitapRafiGuncelle">
-        <property name="text">
-         <string>Kitap Rafını Güncelle</string>
+      <item row="2" column="0">
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
         </property>
-       </widget>
-      </item>
-      <item row="1" column="0" colspan="2">
-       <widget class="QLineEdit" name="yeni_id_lineEdit"/>
-      </item>
-      <item row="2" column="0" colspan="2">
-       <widget class="QPushButton" name="btnIdGuncelle">
-        <property name="text">
-         <string>ID Güncelle</string>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
         </property>
-       </widget>
+       </spacer>
       </item>
      </layout>
+    </item>
+    <item row="2" column="0">
+     <spacer name="verticalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
     </item>
    </layout>
   </widget>

@@ -6,14 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>647</width>
-    <height>350</height>
+    <width>500</width>
+    <height>260</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>647</width>
-    <height>350</height>
+    <width>500</width>
+    <height>260</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>500</width>
+    <height>260</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -23,80 +29,66 @@
    <layout class="QGridLayout" name="gridLayout_2">
     <item row="0" column="0">
      <layout class="QGridLayout" name="gridLayout">
-      <item row="7" column="1">
-       <widget class="QComboBox" name="kitap_rafi_comboBox">
-        <item>
-         <property name="text">
-          <string>1</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>2</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>3</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>4</string>
-         </property>
-        </item>
+      <item row="0" column="0" colspan="2">
+       <widget class="Line" name="line">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
        </widget>
       </item>
       <item row="2" column="0" colspan="2">
-       <spacer name="horizontalSpacer">
+       <widget class="Line" name="line_2">
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item row="9" column="0" colspan="2">
-       <widget class="QPushButton" name="btnKitapEkle">
-        <property name="minimumSize">
-         <size>
-          <width>647</width>
-          <height>40</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>Kitap Ekle</string>
         </property>
        </widget>
       </item>
-      <item row="4" column="1">
-       <widget class="QLineEdit" name="kitap_yazari_lineEdit"/>
-      </item>
-      <item row="5" column="0" colspan="2">
-       <spacer name="horizontalSpacer_2">
+      <item row="8" column="0" colspan="2">
+       <widget class="Line" name="line_4">
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
         </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
+       </widget>
       </item>
-      <item row="6" column="0">
-       <widget class="QLabel" name="kitaplik_label">
+      <item row="10" column="0" colspan="2">
+       <widget class="Line" name="line_5">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="13" column="0" colspan="2">
+       <widget class="Line" name="line_6">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0" colspan="2">
+       <widget class="Line" name="line_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="0">
+       <widget class="QLabel" name="kitap_rafi_label">
         <property name="text">
-         <string>Kitaplık</string>
+         <string>Kitap Rafı</string>
         </property>
        </widget>
       </item>
       <item row="7" column="0">
+       <widget class="QLabel" name="kitap_yazari_label">
+        <property name="text">
+         <string>Kitap Yazarı</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLineEdit" name="kitap_ismi_lineEdit"/>
+      </item>
+      <item row="9" column="1">
        <widget class="QComboBox" name="kitaplik_comboBox">
         <item>
          <property name="text">
@@ -200,54 +192,78 @@
         </item>
        </widget>
       </item>
-      <item row="3" column="0">
+      <item row="11" column="1">
+       <widget class="QComboBox" name="kitap_rafi_comboBox">
+        <item>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>3</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>4</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="5" column="0">
        <widget class="QLabel" name="kitap_ismi_label">
         <property name="text">
          <string>Kitap İsmi</string>
         </property>
        </widget>
       </item>
-      <item row="4" column="0">
-       <widget class="QLineEdit" name="kitap_ismi_lineEdit"/>
-      </item>
-      <item row="6" column="1">
-       <widget class="QLabel" name="kitap_rafi_label">
+      <item row="9" column="0">
+       <widget class="QLabel" name="kitaplik_label">
         <property name="text">
-         <string>Kitap Rafı</string>
+         <string>Kitaplık</string>
         </property>
        </widget>
       </item>
-      <item row="0" column="0">
+      <item row="7" column="1">
+       <widget class="QLineEdit" name="kitap_yazari_lineEdit"/>
+      </item>
+      <item row="1" column="0">
        <widget class="QLabel" name="id_label">
         <property name="text">
          <string>ID</string>
         </property>
        </widget>
       </item>
-      <item row="3" column="1">
-       <widget class="QLabel" name="kitap_yazari_label">
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="id_lineEdit"/>
+      </item>
+      <item row="12" column="0" colspan="2">
+       <widget class="QPushButton" name="btnKitapEkle">
         <property name="text">
-         <string>Kitap Yazarı</string>
+         <string>Kitap Ekle</string>
         </property>
        </widget>
       </item>
-      <item row="8" column="0" colspan="2">
-       <spacer name="horizontalSpacer_3">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item row="1" column="0" colspan="2">
-       <widget class="QLineEdit" name="id_lineEdit"/>
-      </item>
      </layout>
+    </item>
+    <item row="1" column="0">
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
     </item>
    </layout>
   </widget>
