@@ -7,20 +7,25 @@
     <x>0</x>
     <y>0</y>
     <width>800</width>
-    <height>575</height>
+    <height>600</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
     <width>800</width>
-    <height>575</height>
+    <height>600</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
     <width>800</width>
-    <height>575</height>
+    <height>600</height>
    </size>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
   </property>
   <property name="windowTitle">
    <string>Kayıt Güncelle</string>
@@ -507,7 +512,7 @@
       <item row="0" column="0">
        <widget class="QLabel" name="degistirilecek_kaydin_id_bilgisi_label">
         <property name="text">
-         <string>Değiştirilecek Kaydın ID Bilgisi</string>
+         <string>Değiştirilecek Kaydın ID Değeri</string>
         </property>
        </widget>
       </item>

@@ -22,6 +22,11 @@
     <height>400</height>
    </size>
   </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
   <property name="windowTitle">
    <string>Kitap Güncelle</string>
   </property>
@@ -269,7 +274,7 @@
       <item row="0" column="0">
        <widget class="QLabel" name="degistirilecek_id_label">
         <property name="text">
-         <string>Değiştirilecek kitap kaydının ID bilgisi</string>
+         <string>Değiştirilecek Kitap Kaydının ID Değeri</string>
         </property>
        </widget>
       </item>
