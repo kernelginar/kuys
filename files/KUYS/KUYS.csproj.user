@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\user\Documents\Projeler\kuys-veritabanli\KUYS\Properties\PublishProfiles\ClickOnceProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="KayitAra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="KayitEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="KayitGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="KayitSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="KitapAra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="KitapEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="KitapGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="KitapSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
