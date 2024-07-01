@@ -28,11 +28,28 @@ namespace KUYS
         private void btnKitapSil_Click(object sender, EventArgs e)
         {
             string Id = silinecek_id_textbox.Text;
-            Backend.Kitap.Sil(Id);
-
-            silinecek_id_textbox.Text = "";
-
-            mainForm.VerileriYukleKitap();
+            if (Id != "" && int.TryParse(Id, out int checkInt1) == true)
+            {
+                if (checkInt1 >= 0)
+                {
+                    Backend.Kitap.Sil(Id);
+                    silinecek_id_textbox.Text = "";
+                    mainForm.VerileriYukleKitap();
+                    MessageBox.Show($"{Id} numaralı kitap başarıyla silindi!");
+                }
+                else if (checkInt1 < 0)
+                {
+                    MessageBox.Show("""ID değeri "-" (eksi) değerler alamaz! Lütfen doğru ID değerini girip tekrar deneyin.""");
+                }
+            }
+            else if (Id == "")
+            {
+                MessageBox.Show("Silinecek ID değeri boş bırakılamaz! Lütfen doğru ID değerini girip tekrar deneyin.");
+            }
+            else if (int.TryParse(Id, out int checkInt2) == false)
+            {
+                MessageBox.Show("Silmeye çalıştığınız ID değeri Tam Sayı değil! ID değerleri Tam Sayı olmalıdır. Lütfen doğru ID değerini girip tekrar deneyin.");
+            }
         }
     }
 }

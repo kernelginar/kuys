@@ -1220,11 +1220,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Documents\\Projeler\\kuys-veritabanli\\KUYS\\KUYS.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Documents\\Projeler\\KUYS\\KUYS\\KUYS.csproj",
       "projectName": "KUYS",
-      "projectPath": "C:\\Users\\user\\Documents\\Projeler\\kuys-veritabanli\\KUYS\\KUYS.csproj",
+      "projectPath": "C:\\Users\\user\\Documents\\Projeler\\KUYS\\KUYS\\KUYS.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Documents\\Projeler\\kuys-veritabanli\\KUYS\\obj\\",
+      "outputPath": "C:\\Users\\user\\Documents\\Projeler\\KUYS\\KUYS\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

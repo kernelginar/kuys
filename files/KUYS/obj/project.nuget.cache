@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "M8jr/fSGgm4=",
+  "dgSpecHash": "+RdQ9beRiog=",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Documents\\Projeler\\kuys-veritabanli\\KUYS\\KUYS.csproj",
+  "projectFilePath": "C:\\Users\\user\\Documents\\Projeler\\KUYS\\KUYS\\KUYS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
